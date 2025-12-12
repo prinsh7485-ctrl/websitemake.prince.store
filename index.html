@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Web Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero">
+    <h1>Prince Web Solution</h1>
+    <p>Get Your Website Developed Professionally</p>
+
+    <div class="box">
+        <h2>Select Website Niche</h2>
+
+        <select id="niche">
+            <option value="">-- Select Niche --</option>
+            <option value="school">School Website</option>
+            <option value="restaurant">Restaurant Website</option>
+            <option value="ecommerce">E-Commerce Website</option>
+            <option value="hospital">Hospital Website</option>
+            <option value="portfolio">Portfolio Website</option>
+            <option value="salon">Salon Website</option>
+            <option value="travel">Travel Website</option>
+        </select>
+
+        <button onclick="generateQuestions()">Next</button>
+    </div>
+
+    <form id="questionForm" class="hidden">
+        <h2>Answer These Questions</h2>
+        <div id="questions"></div>
+        <button type="button" onclick="sendToWhatsApp()">Submit Answers</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
